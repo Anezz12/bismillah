@@ -1,10 +1,11 @@
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 
-function navbar() {
+function navbar({ className }: { className?: string }) {
   const socials = [
     {
       link: "https://www.linkedin.com/in/harsena-argretya/",
@@ -23,7 +24,12 @@ function navbar() {
     },
   ];
   return (
-    <nav className="py-10 flex justify-between items-center">
+    <nav
+      className={cn(
+        "py-10 flex justify-between items-center animate-move-down",
+        className
+      )}
+    >
       <h1 className="text-2xl font-bold underline underline-offset-8 decoration-blue-500 -rotate-2">
         Harsena Argretya
       </h1>
