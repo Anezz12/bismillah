@@ -7,6 +7,7 @@ import {
   SiGit,
   SiHtml5,
   SiJavascript,
+  SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
   SiReact,
@@ -16,22 +17,6 @@ import {
 function Skills() {
   const skills = [
     {
-      text: "React",
-      Icon: SiReact,
-    },
-    {
-      text: "Next.js",
-      Icon: SiNextdotjs,
-    },
-    {
-      text: "Tailwind",
-      Icon: SiTailwindcss,
-    },
-    {
-      text: "JavaScript",
-      Icon: SiJavascript,
-    },
-    {
       text: "HTML",
       Icon: SiHtml5,
     },
@@ -40,12 +25,34 @@ function Skills() {
       Icon: SiCss3,
     },
     {
+      text: "Tailwind",
+      Icon: SiTailwindcss,
+    },
+
+    {
+      text: "JavaScript",
+      Icon: SiJavascript,
+    },
+    {
       text: "Node.js",
       Icon: SiNodedotjs,
     },
     {
       text: "Git",
       Icon: SiGit,
+    },
+
+    {
+      text: "Next.js",
+      Icon: SiNextdotjs,
+    },
+    {
+      text: "React",
+      Icon: SiReact,
+    },
+    {
+      text: "MongoDb",
+      Icon: SiMongodb,
     },
   ];
 
