@@ -17,15 +17,9 @@ function HeroSection() {
         </h1>
         <p className="md:max-w-lg text-xl text-gray-300">
           {
-            "Based in Yogyakarta Indonesia, I am currently studying at Amikom University Yogyakarta as an Informatics student."
+            "a self-taught Indonesian programmer. since 2022, I've been learning programming. Now a software engineering student with more web development experience."
           }
         </p>
-        <Link
-          href={"mailto:harsenaargrtya1@gmail.com"}
-          className="inline-block"
-        >
-          <Title text="Contact Me" />
-        </Link>
       </div>
       <div className="relative">
         <div className="w-72 h-72 space-y-3 relative">
