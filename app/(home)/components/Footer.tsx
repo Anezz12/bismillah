@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 function Footer() {
   return (
-    <div className=" border-t mt-10">
+    <div className=" border-t border-[#999] mt-10">
       <Navbar className=" flex-col gap-5" />
     </div>
   );
