@@ -4,13 +4,15 @@ import Title from "./Title";
 import Link from "next/link";
 import { MovingBorderBtn } from "./ui/moving-border";
 import { motion } from "framer-motion";
-import { HoverEffect } from "./ui/card-hover-effect";
+import { useSectionInView } from "@/lib/hooks";
 
-function project() {
+function Projects() {
+  const { ref } = useSectionInView("Projects");
   return (
     <div className="py-10 p-5 sm:p-0 ">
       <motion.div
-        className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-20"
+        ref={ref}
+        className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-20 scroll-smooth"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.175 }}
@@ -427,4 +429,4 @@ function project() {
   );
 }
 
-export default project;
+export default Projects;

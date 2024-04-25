@@ -1,12 +1,23 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import { MovingBorderBtn } from "./ui/moving-border";
-import Title from "./Title";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { useSectionInView } from "@/lib/hooks";
 
 function HeroSection() {
+  const { ref } = useSectionInView("About");
   return (
     <div className=" min-h-[60vh] flex flex-col-reverse gap-16 lg:gap-0 lg:flex-row items-center justify-between animate-move-up">
+      <motion.div
+        ref={ref}
+        className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-20 scroll-smooth"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.175 }}
+        id="About"
+      ></motion.div>
       <div className="space-y-10 text-center lg:text-left">
         <h1 className="text-4xl  lg:text-5xl font-bold flex flex-col space-y-6">
           Hallo Nice to meet you👋🏻
