@@ -9,9 +9,9 @@ import Projects from "./components/Projects";
 
 function page() {
   return (
-    <div className=" min-h-screen bg-gray-900 overflow-hidden">
+    <div className=" min-h-screen  bg-gray-900 overflow-hidden ">
       <ActiveSectionContextProvider>
-        <div className="bg-gray-900 dark:bg-grid-black/[0.02] relative">
+        <div className="bg-gray-900 dark:bg-grid-black/[0.02] relative scroll-smooth focus:scroll-auto">
           <div className="max-w-7xl mx-auto p-5 ">
             <Header />
             <Navbar />
