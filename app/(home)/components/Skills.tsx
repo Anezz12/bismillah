@@ -2,6 +2,7 @@
 import React from "react";
 import Title from "./Title";
 import { HoverEffect } from "./ui/card-hover-effect";
+import { motion } from "framer-motion";
 import {
   SiCss3,
   SiGit,
@@ -58,6 +59,13 @@ function Skills() {
 
   return (
     <div className="max-w-5xl mx-auto px-8 ">
+      <motion.div
+        className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.175 }}
+        id="skills"
+      ></motion.div>
       <Title
         text="Skills 🖌️"
         className="flex flex-col items-center justify-center -rotate-6 cursor-pointer"

@@ -1,15 +1,26 @@
+"use client";
 import React from "react";
 import Title from "./Title";
 import Link from "next/link";
-import { MovingBorder, MovingBorderBtn } from "./ui/moving-border";
+import { MovingBorderBtn } from "./ui/moving-border";
+import { motion } from "framer-motion";
+import { HoverEffect } from "./ui/card-hover-effect";
 
 function project() {
   return (
     <div className="py-10 p-5 sm:p-0 ">
+      <motion.div
+        className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-20"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.175 }}
+        id="projects"
+      ></motion.div>
       <Title
         text="Projects 📌"
         className=" flex flex-col items-center justify-center rotate-6  py-12 cursor-pointer"
       />
+
       <div className="py-6">
         <MovingBorderBtn className="flex flex-col cursor-auto text-left">
           <div className="p-4">
