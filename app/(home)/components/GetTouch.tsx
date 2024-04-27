@@ -3,7 +3,7 @@ import Title from "./Title";
 
 function GetTouch() {
   return (
-    <div className="animate-move-down">
+    <div className="max-w-5xl mx-auto px-8 animate-move-down">
       <div>
         <Title
           text="Get in touch"

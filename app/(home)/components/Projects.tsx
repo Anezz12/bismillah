@@ -9,7 +9,7 @@ import { useSectionInView } from "@/lib/hooks";
 function Projects() {
   const { ref } = useSectionInView("Projects");
   return (
-    <div className="max-w-5xl mx-auto px-8">
+    <div className="max-w-5xl mx-auto px-8  animate-move-down">
       <motion.div
         ref={ref}
         className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-32"
@@ -21,11 +21,11 @@ function Projects() {
       <div>
         <Title
           text="Projects 📌"
-          className=" flex flex-col items-center justify-center rotate-6 cursor-pointer"
+          className="flex flex-col items-center justify-center rotate-6 cursor-pointer"
         />
 
-        <div className="py-6">
-          <MovingBorderBtn className="flex flex-col cursor-auto text-left">
+        <div className="py-6 flex flex-col items-center justify-center">
+          <MovingBorderBtn className="flex flex-col cursor-auto text-left border-gray-300 ">
             <div className="p-4">
               <h2 className="text-lg font-bold ">Amikom Connect</h2>
               <div className="prose prose-invert">
@@ -145,7 +145,7 @@ function Projects() {
               </div>
             </div>
 
-            <div className=" border-t">
+            <div className=" border-t border-gray-300">
               <div className="p-4">
                 <div>
                   <h2 className="text-lg font-bold text-left">PS Rental</h2>
@@ -238,7 +238,7 @@ function Projects() {
                 </div>
               </div>
             </div>
-            <div className="border-t">
+            <div className="border-t border-gray-300">
               <div className="p-4">
                 <div className="">
                   <h2 className="text-lg font-bold text-left">PS Rental</h2>
@@ -331,7 +331,7 @@ function Projects() {
                 </div>
               </div>
             </div>
-            <div className="border-t">
+            <div className="border-t border-gray-300">
               <div className="p-4">
                 <div>
                   <h2 className="text-lg font-bold text-left">PS Rental</h2>
