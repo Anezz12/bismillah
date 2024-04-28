@@ -47,7 +47,7 @@ function HeroSection() {
             {" "}
             <Link href="mailto:harsenaargrtya1@gmail.com">
               {" "}
-              <span>You Can Contact Me</span>
+              <span>You Can Contact Me📩</span>
             </Link>
           </MovingBorderBtn>
         </div>

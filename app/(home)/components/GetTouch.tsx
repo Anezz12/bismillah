@@ -17,7 +17,7 @@ function GetTouch() {
     >
       <div>
         <Title
-          text="Get in touch"
+          text="Get in touch✍️"
           className="flex flex-col items-center justify-center -rotate-6 cursor-pointer"
         />
       </div>
