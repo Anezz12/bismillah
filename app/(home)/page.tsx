@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import ActiveSectionContextProvider from "./components/ui/active-section-context";
 import Projects from "./components/Projects";
 import GetTouch from "./components/GetTouch";
+import About from "./components/About";
 
 function page() {
   return (
@@ -17,6 +18,7 @@ function page() {
             <Header />
             <Navbar />
             <HeroSection />
+            <About />
             <Skills />
             <Projects />
             <GetTouch />

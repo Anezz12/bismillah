@@ -9,7 +9,7 @@ import { useSectionInView } from "@/lib/hooks";
 function Projects() {
   const { ref } = useSectionInView("Projects");
   return (
-    <div className="max-w-5xl mx-auto px-8  animate-move-down">
+    <div className="min-h-[60vh] gap-16 lg:gap-0 lg:flex-row items-center justify-between animate-move-down">
       <motion.div
         ref={ref}
         className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-32"
@@ -24,7 +24,7 @@ function Projects() {
           className="flex flex-col items-center justify-center rotate-6 cursor-pointer"
         />
 
-        <div className="py-6 flex flex-col items-center justify-center">
+        <div className="py-20 flex flex-col items-center justify-center">
           <MovingBorderBtn className="flex flex-col cursor-auto text-left border-gray-300 ">
             <div className="p-4">
               <h2 className="text-lg font-bold ">Amikom Connect</h2>
