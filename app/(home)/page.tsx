@@ -10,6 +10,7 @@ import GetTouch from "./components/GetTouch";
 import About from "./components/About";
 import SectionDivider from "./components/SectionDivider";
 import Skill from "./components/Skill";
+import { Analytics } from "@vercel/analytics/react";
 
 function page() {
   return (
@@ -28,6 +29,7 @@ function page() {
             <Footer />
           </div>
         </div>
+        <Analytics />
       </ActiveSectionContextProvider>
     </div>
   );
