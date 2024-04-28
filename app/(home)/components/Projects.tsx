@@ -124,7 +124,7 @@ function Projects() {
                       title="Demo"
                       target="_blank"
                       className="hover:text-waikawa-gray-400 transition-colors"
-                      href="https://jastinxyz.github.io/discord-bot-landing-page-web"
+                      href="https://amikomconnect.vercel.app"
                     >
                       <svg
                         stroke="currentColor"
@@ -216,7 +216,7 @@ function Projects() {
                           title="Demo"
                           target="_blank"
                           className="hover:text-waikawa-gray-400 transition-colors"
-                          href="https://jastinxyz.github.io/discord-bot-landing-page-web"
+                          href="https://github.com/Anezz12/PsRental"
                         >
                           <svg
                             stroke="currentColor"
