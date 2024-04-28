@@ -9,7 +9,7 @@ function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 text-center py-28 pb-52 leading-loose sm:mb-40 scroll-mt-12  flex-col items-center justify-center"
+      className="mb-28 text-center py-28 pb-52 sm:mb-40 scroll-mt-12  flex-col items-center justify-center"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -21,7 +21,7 @@ function About() {
           className="flex flex-col items-center justify-center -rotate-6 cursor-pointer py-10"
         />
 
-        <p className="mb-3 max-w-[50rem]  text-xl">
+        <p className="mb-3 max-w-[50rem]  leading-loose text-xl">
           I am a 4th semester student majoring in
           <span className="font-medium"> Informatics</span>, I decided to pursue
           my passion for programming. I studied
