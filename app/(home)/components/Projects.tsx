@@ -9,15 +9,13 @@ import { useSectionInView } from "@/lib/hooks";
 function Projects() {
   const { ref } = useSectionInView("Projects");
   return (
-    <div className="min-h-[60vh] gap-16 lg:gap-0 lg:flex-row items-center justify-between animate-move-down">
-      <motion.div
-        ref={ref}
-        className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-32"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.175 }}
-        id="projects"
-      ></motion.div>
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+      id="projects"
+      className="min-h-[60vh] gap-16 py-32 lg:gap-0 lg:flex-row  items-center justify-between"
+    >
       <div>
         <Title
           text="Projects 📌"
@@ -427,7 +425,7 @@ function Projects() {
           </MovingBorderBtn>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

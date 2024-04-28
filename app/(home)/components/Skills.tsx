@@ -60,21 +60,20 @@ function Skills() {
   const { ref } = useSectionInView("Skills");
 
   return (
-    <div className="max-w-5xl mx-auto px-8  py-14 animate-move-down">
-      <motion.div
-        ref={ref}
-        className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.175 }}
-        id="skills"
-      ></motion.div>
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+      id="skills"
+      className="max-w-5xl mx-auto px-8  py-32"
+    >
       <Title
         text="Skills 🖌️"
         className="flex flex-col items-center justify-center -rotate-6 cursor-pointer"
       />
       <HoverEffect items={skills} />
-    </div>
+    </motion.div>
   );
 }
 

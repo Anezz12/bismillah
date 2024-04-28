@@ -7,15 +7,14 @@ import { useSectionInView } from "@/lib/hooks";
 function GetTouch() {
   const { ref } = useSectionInView("Contact");
   return (
-    <div className="max-w-5xl mx-auto px-8 animate-move-down">
-      <motion.div
-        ref={ref}
-        className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.175 }}
-        id="contact"
-      ></motion.div>
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+      id="contact"
+      className="max-w-5xl mx-auto px-8 py-28"
+    >
       <div>
         <Title
           text="Get in touch"
@@ -70,7 +69,7 @@ function GetTouch() {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

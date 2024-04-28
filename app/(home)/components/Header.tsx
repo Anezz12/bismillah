@@ -26,10 +26,6 @@ export default function Header() {
     },
 
     {
-      name: "Experience",
-      hash: "#experience",
-    },
-    {
       name: "Contact",
       hash: "#contact",
     },

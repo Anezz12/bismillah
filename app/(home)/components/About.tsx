@@ -9,44 +9,43 @@ function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 text-center leading-8 sm:mb-40 scroll-mt-12  flex-col items-center justify-center"
+      className="mb-28 text-center py-28 pb-52 leading-loose sm:mb-40 scroll-mt-12  flex-col items-center justify-center"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <div className="flex flex-col items-center justify-center py-32 pt-44">
+      <div className="flex flex-col items-center justify-center">
         <Title
-          text="About 🖌️"
+          text="About Me🖌️"
           className="flex flex-col items-center justify-center -rotate-6 cursor-pointer py-10"
         />
 
-        <p className="mb-3 max-w-[45rem]">
-          After graduating with a degree in{" "}
-          <span className="font-medium">Accounting</span>, I decided to pursue
-          my passion for programming. I enrolled in a coding bootcamp and
-          learned{" "}
-          <span className="font-medium">full-stack web development</span>.{" "}
-          <span className="italic">My favorite part of programming</span> is the
-          problem-solving aspect. I <span className="underline">love</span> the
-          feeling of finally figuring out a solution to a problem. My core stack
-          is{" "}
+        <p className="mb-3 max-w-[50rem]  text-xl">
+          I am a 4th semester student majoring in
+          <span className="font-medium"> Informatics</span>, I decided to pursue
+          my passion for programming. I studied
+          <span className="font-medium"> full-stack web development</span>.
+          <span className="italic"> My favorite part of programming</span> is
+          the problem-solving aspect. I <span className="underline">love</span>{" "}
+          the feeling of finally figuring out a solution to a problem. My core
+          stack is{" "}
           <span className="font-medium">
-            React, Next.js, Node.js, and MongoDB
+            React, Next.js, Node.js, MYSQL and MongoDB
           </span>
-          . I am also familiar with TypeScript and Prisma. I am always looking
-          to learn new technologies. I am currently looking for a{" "}
-          <span className="font-medium">full-time position</span> as a software
-          developer.
+          . I am also familiar with Javascript and I am starting to learn
+          Typescript as well. I am always looking to learn new technologies. I
+          am currently
+          <span className="font-medium"> studying</span> to develop my
+          potential.
         </p>
 
-        <p className=" max-w-[45rem]">
+        <p className=" max-w-[45rem]  text-xl">
           <span className="italic">When Im not coding</span>, I enjoy playing
-          video games, watching movies, and playing with my dog. I also enjoy{" "}
+          video games, watching movies. I also enjoy{" "}
           <span className="font-medium">learning new things</span>. I am
-          currently learning about{" "}
-          <span className="font-medium">history and philosophy</span>. Im also
-          learning how to play the guitar.
+          currently learning about <span className="font-medium">history</span>
+          .Im also learning how to use LInux OS.
         </p>
       </div>
     </motion.section>
