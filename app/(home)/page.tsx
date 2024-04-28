@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
-import Skills from "./components/Skills";
+
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ActiveSectionContextProvider from "./components/ui/active-section-context";
@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import GetTouch from "./components/GetTouch";
 import About from "./components/About";
 import SectionDivider from "./components/SectionDivider";
+import Skill from "./components/Skill";
 
 function page() {
   return (
@@ -21,7 +22,7 @@ function page() {
             <HeroSection />
             <SectionDivider />
             <About />
-            <Skills />
+            <Skill />
             <Projects />
             <GetTouch />
             <Footer />

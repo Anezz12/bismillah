@@ -16,7 +16,7 @@ import {
 } from "react-icons/si";
 import { useSectionInView } from "@/lib/hooks";
 
-function Skills() {
+function Skill() {
   const skills = [
     {
       text: "HTML",
@@ -57,7 +57,7 @@ function Skills() {
       Icon: SiMongodb,
     },
   ];
-  const { ref } = useSectionInView("Skills");
+  const { ref } = useSectionInView("Skills", 0.5);
 
   return (
     <motion.div
@@ -66,7 +66,7 @@ function Skills() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="skills"
-      className="max-w-5xl mx-auto px-8  py-32"
+      className="max-w-5xl mx-auto px-8  py-32 "
     >
       <Title
         text="Skills 🖌️"
@@ -77,4 +77,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default Skill;
