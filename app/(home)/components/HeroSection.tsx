@@ -31,26 +31,24 @@ function HeroSection() {
           }
         </p>
       </div>
-      <div className="relative">
-        <div className="w-72 h-72 space-y-3 relative">
+      <div className=" flex flex-col items-center relative">
+        <div className="w-72 h-80 space-y-3 relative">
           <Image
             width={1000}
-            height={100}
-            src="/pp.jpeg"
+            height={1000}
+            src="/ppp.png"
             alt="Gambar"
             className="rounded-lg absolute object-cover"
           />
-          <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
         </div>
-        <div className="absolute bottom-5 sm:-bottom-14 left-14 -sm:left-10">
-          <MovingBorderBtn borderRadius=".05rem" className="p-3 font-semibold ">
+        <div className="absolute bottom-5 sm:-bottom-14 left-14 -sm:left-10"></div>
+        <MovingBorderBtn borderRadius=".05rem" className="p-3 font-semibold">
+          {" "}
+          <Link href="mailto:harsenaargrtya1@gmail.com">
             {" "}
-            <Link href="mailto:harsenaargrtya1@gmail.com">
-              {" "}
-              <span>You Can Contact Me📩</span>
-            </Link>
-          </MovingBorderBtn>
-        </div>
+            <span>You Can Contact Me📩</span>
+          </Link>
+        </MovingBorderBtn>
       </div>
     </motion.div>
   );
