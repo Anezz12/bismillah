@@ -1,11 +1,14 @@
+"use client";
+import { useSectionInView } from "@/lib/hooks";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 
-function navbar({ className }: { className?: string }) {
+function Navbar({ className }: { className?: string }) {
   const socials = [
     {
       link: "https://www.linkedin.com/in/harsena-argretya/",
@@ -23,8 +26,11 @@ function navbar({ className }: { className?: string }) {
       Icon: FaInstagram,
     },
   ];
+  const { ref } = useSectionInView("Home");
   return (
-    <nav
+    <motion.nav
+      ref={ref}
+      id="home"
       className={cn(
         "py-20 flex justify-between items-center animate-move-down",
         className
@@ -43,8 +49,8 @@ function navbar({ className }: { className?: string }) {
           );
         })}
       </div>
-    </nav>
+    </motion.nav>
   );
 }
 
-export default navbar;
+export default Navbar;

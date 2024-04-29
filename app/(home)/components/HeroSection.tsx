@@ -7,15 +7,12 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 function HeroSection() {
-  const { ref } = useSectionInView("Home");
   return (
     <motion.div
-      ref={ref}
-      className=" min-h-[60vh] flex flex-col-reverse gap-16 lg:gap-0 lg:flex-row items-center justify-between pb-48 pt-24"
+      className=" min-h-[60vh] flex flex-col-reverse gap-16 lg:gap-0 lg:flex-row items-center justify-between pb-48 pt-20"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.125 }}
-      id="home"
     >
       <div className="space-y-10 text-center lg:text-left">
         <h1 className="text-4xl  lg:text-5xl font-bold flex flex-col space-y-6">
