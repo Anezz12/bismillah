@@ -11,7 +11,7 @@ function HeroSection() {
   return (
     <motion.div
       ref={ref}
-      className=" min-h-[60vh] flex flex-col-reverse gap-16 lg:gap-0 lg:flex-row items-center justify-between pb-60 pt-44"
+      className=" min-h-[60vh] flex flex-col-reverse gap-16 lg:gap-0 lg:flex-row items-center justify-between pb-60 pt-10"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.125 }}
