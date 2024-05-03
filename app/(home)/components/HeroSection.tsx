@@ -4,7 +4,6 @@ import React from "react";
 import { MovingBorderBtn } from "./ui/moving-border";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useSectionInView } from "@/lib/hooks";
 
 function HeroSection() {
   return (

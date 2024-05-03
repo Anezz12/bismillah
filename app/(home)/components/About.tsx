@@ -27,8 +27,8 @@ function About() {
           pursue my passion for programming. I studied
           <span className="font-medium"> full-stack web development</span>.
           <span className="italic"> My favorite part of programming</span> is
-          the problem-solving aspect🔥. I{" "}
-          <span className="underline">love </span>
+          the problem-solving aspect🔥. I
+          <span className="underline"> love </span>
           {
             "the feeling of finally figuring out a solution to a problem. My core stack is "
           }
@@ -42,7 +42,7 @@ function About() {
           potential.
         </p>
 
-        <p className=" max-w-[45rem]  text-xl">
+        <p className=" mb-3 max-w-[50rem]  leading-loose text-xl">
           <span className="italic">{"When I'm not coding"}</span>, I enjoy
           playing video games⚔️, watching movies🍿. I also enjoy
           <span className="font-medium"> learning new things</span>. I am
