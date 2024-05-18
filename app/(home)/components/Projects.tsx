@@ -309,7 +309,7 @@ function Projects() {
                           title="Demo"
                           target="_blank"
                           className="hover:text-waikawa-gray-400 transition-colors"
-                          href="https://msitarfotocopy.vercel.app/"
+                          href="https://mistarfotocopy.vercel.app/"
                         >
                           <svg
                             stroke="currentColor"
