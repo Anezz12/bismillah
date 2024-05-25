@@ -36,10 +36,10 @@ function Navbar({ className }: { className?: string }) {
         className
       )}
     >
-      <h1 className="text-2xl font-bold underline underline-offset-8 decoration-blue-500 ">
+      <h1 className="text-2xl text-white font-bold underline underline-offset-8 decoration-blue-500 ">
         Harsena Argretya
       </h1>
-      <div className="flex items-center gap-5">
+      <div className="flex items-center gap-5 text-white">
         {socials.map((social, index) => {
           const Icon = social.Icon;
           return (
